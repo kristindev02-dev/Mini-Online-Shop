@@ -1,0 +1,348 @@
+body{
+    background: linear-gradient(135deg, #e6fbf9 0%, #c3f2ee 45%, #eefcf7 100%);
+    font-family: Arial, sans-serif;
+    color: #084f4a;
+}
+
+.form_container {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_page,
+.signup_page,
+.feedback_page,
+.payment_page {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(4, 185, 179, 0.18);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 48px;
+    border-radius: 20px;
+    box-shadow: 0 18px 35px rgba(4, 185, 179, 0.18);
+}
+
+.login_page,
+.signup_page {
+    width: 460px;
+}
+
+.payment_page {
+    width: 560px;
+}
+
+.payment_page h2 {
+    margin: 0 0 24px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.login_page h3,
+.signup_page h3 {
+    margin: 0 0 28px;
+    padding: 0;
+    text-align: center;
+    color: #047f78;
+    font-size: 2rem;
+}
+
+.login_page form,
+.signup_page form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+
+.form_actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.button_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.form_button {
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex: 1;
+    min-width: 140px;
+}
+
+.form_button.cancel {
+    background-color: #c7f3ed;
+    color: #115e59;
+}
+
+.form_button:hover {
+    background-color: #0e6d65;
+}
+
+.form_button.cancel:hover {
+    background-color: #a3e7dc;
+}
+
+.input_area,
+textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.link {
+    display: block;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+    color: #047f78;
+    text-decoration: none;
+    align-self: flex-start;
+    font-size: 0.95rem;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.cart_page {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(4, 185, 179, 0.18);
+    display: inline-flex;
+    flex-direction: column;
+    padding: 36px 46px;
+    border-radius: 18px;
+    box-shadow: 0 18px 35px rgba(4, 185, 179, 0.18);
+    width: 560px;
+    max-width: calc(100vw - 40px);
+}
+
+.cart_page h2 {
+    margin: 0 0 24px;
+}
+
+.cart_table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+th,
+td {
+    padding: 8px;
+    border: 1px solid #a5a5a5dd;
+}
+
+.qtybtn {
+    border: 1px solid #a5a5a5dd;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.qtybtn:hover {
+    background-color: rgb(208, 208, 208);
+}
+
+.form_button,
+.paymentbtn {
+    background-color: #04b9b3;
+    color: #dfdfdf;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    min-width: 140px;
+    transition: background-color 0.2s ease;
+}
+
+.cart_page .paymentbtn {
+    display: block;
+    margin: 20px auto 0;
+}
+
+.cart_page .button_row .form_button {
+    padding: 10px 18px;
+    min-width: 150px;
+    font-size: 0.95rem;
+}
+
+.form_button:hover,
+.paymentbtn:hover {
+    background-color: #028a83;
+}
+
+.order_summary p {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    /* or whatever fixed width you want */
+    margin: 4px 0;
+    font-size: 1.1rem;
+}
+
+.order_summary .order_label {
+    flex: 1;
+}
+
+.order_summary .order_value {
+    width: 150px;
+    text-align: left;
+}
+
+.payment_page label {
+    font-size: 14px;
+}
+
+.payment_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+    font-size: 1.25rem;
+    color: #047f78;
+}
+
+.payment_method,
+.billing_details,
+.card_details,
+.order_summary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.payment_method,
+.billing_details,
+.card_details {
+    padding: 18px 18px 10px;
+    border: 1px solid rgba(4, 185, 179, 0.18);
+    border-radius: 18px;
+    background-color: rgba(4, 185, 179, 0.04);
+}
+
+.billing_details,
+.card_details {
+    gap: 10px;
+}
+
+.payment_method label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.payment_form .input_area,
+.payment_form textarea {
+    margin-bottom: 0;
+}
+
+.payment_form .billing_details input,
+.payment_form .billing_details textarea,
+.payment_form .card_details input {
+    margin-bottom: 10px;
+}
+
+.order_summary {
+    padding: 16px 18px;
+    border: 1px solid rgba(4, 185, 179, 0.18);
+    border-radius: 18px;
+    background-color: rgba(4, 185, 179, 0.04);
+    gap: 12px;
+}
+
+.button_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.order_summary p {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.paymentbtn {
+    width: 180px;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+
+.input_area,
+textarea {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 28px;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    font-size: 1rem;
+}
+
+.form_label {
+    font-size: 17px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.required-star {
+    color: #dc2626;
+    margin-left: 4px;
+}
+
+.radiobutton:hover,
+.checkbox:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.arrow_container {
+    display: inline-flex;
+    position: relative;
+}
+
+.arrow img {
+    position: absolute;
+    float: inline-start;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+     transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+

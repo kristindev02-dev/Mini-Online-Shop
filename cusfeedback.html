@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="arrow_container">
+        <a href="index.html" class="arrow"><img src="image/home.png" alt="Home">
+        </a>
+    </div>
+    <div class="form_container">
+    <div class="feedback_page">
+        <h1>Customer Satisfaction Form</h1>
+        <form>
+            <label class="form_label" for="name">Name :</label>
+            <input class="input_area" type="text" name="name" id="name" placeholder="Your name"><br><br>
+            <label class="form_label" for="phone">Phone :</label>
+            <input class="input_area" type="text" name="phone" id="phone" placeholder="09123456789"><br><br>
+            <label class="form_label" for="email">Email :</label>
+            <input class="input_area" type="email" name="email" id="email"
+                placeholder="Enter your email address"><br><br>
+
+            <label class="form_label">How was the service?</label>
+            <input class="radiobutton" type="radio" name="services" value="poor"> Poor<br>
+            <input class="radiobutton" type="radio" name="services" value="satisfied"> Satisfied<br>
+            <input class="radiobutton" type="radio" name="services" value="good" checked> Good<br>
+            <input class="radiobutton" type="radio" name="services" value="very-good"> Very Good<br>
+            <input class="radiobutton" type="radio" name="services" value="excellent"> Excellent<br><br>
+
+
+            <label class="form_label">How was the product?</label>
+            <input class="radiobutton" type="radio" name="products" value="poor"> Poor<br>
+            <input class="radiobutton" type="radio" name="products" value="satisfied"> Satisfied<br>
+            <input class="radiobutton" type="radio" name="products" value="good" checked> Good<br>
+            <input class="radiobutton" type="radio" name="products" value="very-good"> Very Good<br>
+            <input class="radiobutton" type="radio" name="products" value="excellent"> Excellent<br><br>
+
+            <label class="form_label">What do you like about us?</label>
+            <input class="checkbox" type="checkbox" id="service" name="satisfaction" value="good-customer-service">
+            <label for="service">Good customer service</label><br>
+            <input class="checkbox" type="checkbox" id="product" name="satisfaction" value="genuine-products" checked>
+            <label for="product">Genuine products</label><br>
+            <input class="checkbox" type="checkbox" id="price" name="satisfaction" value="affordable-price">
+            <label for="price">Affordable prices</label><br>
+            <input class="checkbox" type="checkbox" id="website" name="satisfaction" value="easy-to-use-website">
+            <label for="website">Easy-to-use website</label><br>
+            <input class="checkbox" type="checkbox" id="wide-product" name="satisfaction"
+                value="wide-product-selection">
+            <label for="wide-product">Wide product selection </label><br>
+            <input class="checkbox" type="checkbox" id="others" name="satisfaction" value="others">
+            <label for="others">Others...</label><br><br>
+
+            <label class="form_label">Any suggestions for us?</label>
+            <textarea class="form_textarea" name="suggestions" id="suggestions" rows="5" cols="30"
+                placeholder="leave your comments here...."></textarea><br><br>
+
+            <div class="button_row">
+                <button class="form_button" type="submit"
+                 onclick="alert('Thank you for your feedback!❤️')">
+                    Submit</button>
+
+                <button class="form_button cancel" type="button"
+                onclick="if (confirm('Are you sure you want to cancel?')) window.location.href='index.html';">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

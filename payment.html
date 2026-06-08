@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - MODERNE COLLECTIVE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="arrow_container">
+        <a href="cart.html" class="arrow"><img src="image/home.png" alt="Home">
+        </a>
+    </div>
+    <div class="form_container">
+        <div class="payment_page">
+            <h2>Payment & Billing Details</h2>
+            <form class="payment_form" onsubmit="alert('Order has been placed successfully! Thank you for shopping with MODERNE COLLECTIVE!❤️'); return false;">
+                <div class="payment_method">
+                    <h3>Payment Method</h3>
+                    <label><input class="radiobutton" type="radio" name="payment" value="cod" checked> Cash on
+                        Delivery</label><br>
+                    <label><input class="radiobutton" type="radio" name="payment" value="card"> Credit/Debit
+                        Card</label>
+                </div>
+
+                <div class="billing_details">
+                    <h3>Billing Details</h3>
+                    <label class="form_label" for="billing_name">Full Name <span class="required-star">*</span></label>
+                    <input class="input_area" type="text" name="name" id="billing_name" placeholder="Full Name" required>
+                    <label class="form_label" for="billing_country">Country/Region <span class="required-star">*</span></label>
+                    <input class="input_area" type="text" name="country" id="billing_country" placeholder="Country/Region" required>
+                    <label class="form_label" for="billing_state">State/City <span class="required-star">*</span></label>
+                    <input class="input_area" type="text" name="state" id="billing_state" placeholder="State/City" required>
+                    <label class="form_label" for="billing_township">Township <span class="required-star">*</span></label>
+                    <input class="input_area" type="text" name="township" id="billing_township" placeholder="Township" required>
+                    <label class="form_label" for="billing_address">Address <span class="required-star">*</span></label>
+                    <input class="input_area" type="text" name="address" id="billing_address" placeholder="Address" required>
+                    <label class="form_label" for="billing_phone">Phone <span class="required-star">*</span></label>
+                    <input class="input_area" type="text" name="phone" id="billing_phone" placeholder="Phone" required>
+                    <label class="form_label" for="billing_email">Email Address <span class="required-star">*</span></label>
+                    <input class="input_area" type="email" name="email" id="billing_email" placeholder="Email Address" required
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address.">
+                    <textarea class="textarea" name="request" placeholder="Any special requests?"></textarea>
+                </div>
+
+                <div class="card_details" id="card_details" style="display: none;">
+                    <h3>Card Details</h3>
+                    <input class="input_area" type="text" name="card_number" placeholder="Card Number" maxlength="16"
+                        inputmode="numeric">
+                    <input class="input_area" type="text" name="expiry" placeholder="MM/YY" maxlength="5">
+                    <input class="input_area" type="text" name="cvv" placeholder="CVV" maxlength="3"
+                        inputmode="numeric">
+                </div>
+
+                <div class="order_summary">
+                    <p><span class="order_label">Subtotal</span><span class="order_value">: 90000 mmk</span></p>
+                    <p><span class="order_label">Shipping</span><span class="order_value">: 5000 mmk</span></p>
+                    <p><span class="order_label">Total</span><span class="order_value">: 95000 mmk</span></p>
+                </div>
+
+                <div class="button_row">
+                    <button class="form_button" type="submit"
+                    >Place Order</button>
+
+                    <button class="form_button cancel" type="button"
+                        onclick="if (confirm('Are you sure you want to cancel?')) window.location.href='cart.html';">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <script>
+        const paymentRadios = document.querySelectorAll('input[name="payment"]');
+        const cardDetails = document.getElementById('card_details');
+        const cardInputs = cardDetails.querySelectorAll('input');
+
+        function updateCardSection() {
+            const selected = document.querySelector('input[name="payment"]:checked').value;
+            const showCard = selected === 'card';
+            cardDetails.style.display = showCard ? 'block' : 'none';
+            cardInputs.forEach(input => {
+                input.required = showCard;
+            });
+        }
+
+        paymentRadios.forEach(radio => {
+            radio.addEventListener('change', updateCardSection);
+        });
+
+        updateCardSection();
+    </script> -->
+</body>
+
+</html>

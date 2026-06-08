@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini online shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!--Navigation Bar-->
+    <ul class="navigation_container">
+        <li><a class="icon" href="index.html"><img src="image/home.png" alt="Home" height="30" width="30"
+                    style="margin-right: 10px;"></a></li>
+        <div class="dropdown">
+            <li>
+                <a class="navigation" id="dropdown-btn" href="#categories">Categories</a>
+                <div class="dropdown-content">
+                    <a href="phone_details.html">Phone</a>
+                    <a href="laptop_details.html">Laptop</a>
+                    <a href="tablet_details.html">Tablet</a>
+                    <a href="acc_details.html">Accessories</a>
+                    <a href="printer_details.html">Printer</a>
+                    <a href="projector_details.html">Projector</a>
+                </div>
+            </li>
+        </div>
+        <li><a class="navigation" href="cusfeedback.html">Feedback</a></li>
+        <li><a class="navigation" href="Signup.html">Sign Up</a></li>
+        <li><a class="navigation" href="Login.html">Log in</a></li>
+        <li><a class="icon" href="cart.html"><img src="image/cart.png" alt="Shopping Cart" height="30" width="30"
+                    style="margin-right: 10px;"></a></li>
+    </ul>
+
+    <!--main content-->
+    <main>
+        <section id="home" class="upper_section">
+            <!-- Hero Container -->
+            <div style="position: relative; width: 100%; height: 80vh; overflow: hidden;margin: 0;">
+
+                <!-- The Video (Background) -->
+                <video autoplay muted loop playsinline
+                    style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    <source src="image/video1.mov" type="video/mp4">
+                </video>
+
+                <!-- The Attention Grabber (Overlay Text) -->
+                <div class="attention_grabber">
+
+                    <h1>
+                        MODERNE COLLECTIVE
+                    </h1>
+
+                    <p>
+                        PREMIUM ELECTRONICS • FUTURE TECHNOLOGY • CLASSIC DESIGN
+                    </p>
+
+                    <!-- The "Shop Now" Button -->
+                    <a id="shop-now" href="#categories">
+                        Explore the Collection
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="lower_section">
+            <!--Categories section-->
+            <div id="categories">
+                <!-- <h2 class="product_title">Categories</h2> -->
+                <div class="card_container">
+                    <div class="index_card">
+                        <a href="phone_details.html"><img class="product_img" src="image/phones.png"></a>
+                        <div class="index_caption">Phone</div>
+                    </div>
+
+                    <div class="index_card">
+                        <a href="laptop_details.html"><img class="product_img" src="image/laptop.png"></a>
+                        <div class="index_caption">Laptop</div>
+                    </div>
+
+                    <div class="index_card">
+                        <a href="tablet_details.html"><img class="product_img" src="image/tablet.png"></a>
+                        <div class="index_caption">Tablet</div>
+                    </div>
+
+                    <div class="index_card">
+                        <a href="acc_details.html"><img class="product_img" src="image/acc1.png"></a>
+                        <div class="index_caption">Accessories</div>
+                    </div>
+
+                    <div class="index_card">
+                        <a href="printer_details.html"><img class="product_img" src="image/printer.png"></a>
+                        <div class="index_caption">Printer</div>
+                    </div>
+
+                    <div class="index_card">
+                        <a href="projector_details.html"><img class="product_img" src="image/projectors.png"></a>
+                        <div class="index_caption">Projector</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>MODERNE COLLECTIVE - Premium Electronics | Plain HTML + CSS E-Commerce Showcase</p>
+    </footer>
+</body>
+
+</html>
