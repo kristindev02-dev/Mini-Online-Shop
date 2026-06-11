@@ -16,15 +16,16 @@
     </div>
     <div class="form_container">
     <div class="feedback_page">
-        <h1>Customer Satisfaction Form</h1>
-        <form>
-            <label class="form_label" for="name">Name :</label>
-            <input class="input_area" type="text" name="name" id="name" placeholder="Your name"><br><br>
-            <label class="form_label" for="phone">Phone :</label>
-            <input class="input_area" type="text" name="phone" id="phone" placeholder="09123456789"><br><br>
-            <label class="form_label" for="email">Email :</label>
-            <input class="input_area" type="email" name="email" id="email"
-                placeholder="Enter your email address"><br><br>
+        <h1>Customer Satisfaction Form</h1><br><br>
+        <form onsubmit="alert('Thank you for your feedback!❤️'); return false;">
+            <label class="form_label" for="name">Name <span class="required-star">*</span></label>
+            <input class="input_area" type="text" name="name" id="name" placeholder="Your name" required><br><br>
+            <label class="form_label" for="phone">Phone <span class="required-star">*</span></label>
+            <input class="input_area" type="tel" name="phone" pattern="[0-9]{9,11}" id="phone" placeholder="09123456789"
+            title="Please enter a valid 10 or 11 digit phone number (numbers only)." required><br><br>
+            <label class="form_label" for="email">Email <span class="required-star">*</span></label>
+            <input class="input_area" type="email" name="email" id="email" placeholder="Email Address" required
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address."><br><br>
 
             <label class="form_label">How was the service?</label>
             <input class="radiobutton" type="radio" name="services" value="poor"> Poor<br>
@@ -61,8 +62,7 @@
                 placeholder="leave your comments here...."></textarea><br><br>
 
             <div class="button_row">
-                <button class="form_button" type="submit"
-                 onclick="alert('Thank you for your feedback!❤️')">
+                <button class="form_button" type="submit">
                     Submit</button>
 
                 <button class="form_button cancel" type="button"

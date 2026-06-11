@@ -30,8 +30,8 @@
                     <h3>Billing Details</h3>
                     <label class="form_label" for="billing_name">Full Name <span class="required-star">*</span></label>
                     <input class="input_area" type="text" name="name" id="billing_name" placeholder="Full Name" required>
-                    <label class="form_label" for="billing_country">Country/Region <span class="required-star">*</span></label>
-                    <input class="input_area" type="text" name="country" id="billing_country" placeholder="Country/Region" required>
+                    <!-- <label class="form_label" for="billing_country">Country/Region <span class="required-star">*</span></label>
+                    <input class="input_area" type="text" name="country" id="billing_country" placeholder="Country/Region" required> -->
                     <label class="form_label" for="billing_state">State/City <span class="required-star">*</span></label>
                     <input class="input_area" type="text" name="state" id="billing_state" placeholder="State/City" required>
                     <label class="form_label" for="billing_township">Township <span class="required-star">*</span></label>
@@ -39,7 +39,8 @@
                     <label class="form_label" for="billing_address">Address <span class="required-star">*</span></label>
                     <input class="input_area" type="text" name="address" id="billing_address" placeholder="Address" required>
                     <label class="form_label" for="billing_phone">Phone <span class="required-star">*</span></label>
-                    <input class="input_area" type="text" name="phone" id="billing_phone" placeholder="Phone" required>
+                    <input class="input_area" type="tel" name="phone" pattern="[0-9]{9,11}" id="phone" placeholder="Phone Number"
+            title="Please enter a valid 10 or 11 digit phone number (numbers only)." required>
                     <label class="form_label" for="billing_email">Email Address <span class="required-star">*</span></label>
                     <input class="input_area" type="email" name="email" id="billing_email" placeholder="Email Address" required
                     pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address.">

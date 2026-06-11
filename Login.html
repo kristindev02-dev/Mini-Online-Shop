@@ -18,10 +18,8 @@
         <div class="login_page">
             <h3><b>Account Log In</b></h3>
             <form onsubmit="alert('Successfully logged in!'); return false;">
-                <label class="form_label" for="email">Email Address <span class="required-star">*</span></label>
                 <input class="input_area" type="email" name="email" id="email" placeholder="Email Address" required
                     pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Please enter a valid email address.">
-                <label class="form_label" for="password">Password <span class="required-star">*</span></label>
                 <input class="input_area" type="password" name="password" id="password" placeholder="Password"
                     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
                     title="Password must be at least 8 characters long including [A-z  numbers and special characters(e.g.,!,@,#,$,%).]"
